@@ -100,13 +100,8 @@ plot(output.tree)
 
 dev.off()
 
-
-
-
-
-
-
 Python
+---
 https://www.kaggle.com/code/usmanabbas/pima-dibetes-analysis/notebook
 
 https://www.kaggle.com/code/anupaav/iris-species-classifier-neural-network
