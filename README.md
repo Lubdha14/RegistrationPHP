@@ -114,7 +114,7 @@ https://www.kaggle.com/code/anupaav/iris-species-classifier-neural-network
 https://tinyurl.com/kyp6vcv2
 
 Register
--
+
 connection.php
 <?php
 $servername='localhost';
@@ -128,6 +128,7 @@ die("Connect Failed" . $conn->connect_error);
  echo " ";
 
 index.php
+
 <?php 
 include("connection.php");
 include("login.php");
@@ -156,6 +157,7 @@ include("login.php");
 </html>
 
 login.php
+--
 <?php
 session_start();
 include('connection.php');
@@ -181,6 +183,7 @@ if(isset($_POST['submit'])){
 }
 
 welcom.php
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
