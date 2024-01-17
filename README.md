@@ -10,9 +10,8 @@ select * from users
 
 
 R Prograam
-
 ui.r
-
+--
 shinyUI(
   pageWithSidebar(
   
@@ -54,7 +53,7 @@ shinyUI(
 
 
 server.r  
-
+--
 shinyServer(function(input, output, session) {
 
   output$myPlot <- renderPlot({
@@ -82,7 +81,7 @@ shinyServer(function(input, output, session) {
 
 
 Decision tree
-
+--
 library(rpart)
 
 library(rpart.plot)
