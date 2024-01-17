@@ -63,7 +63,6 @@ shinyServer(function(input, output, session) {
 
     size <- input$SampleSize
     
-    
     if (distType == 'Normal') {
     
       randomVec <- rnorm(size, mean = as.numeric(input$Mean), sd = as.numeric(input$id))
@@ -84,6 +83,22 @@ shinyServer(function(input, output, session) {
 
 Decision tree
 
+library(rpart)
+
+library(rpart.plot)
+
+library(party)
+
+print(head(readingSkills))
+
+input.dat<-readingSkills[c(1:105)]
+
+output.tree<-ctree(nativeSpeakers~age+shoeSize+score,
+                   data=input.dat)
+
+plot(output.tree)
+
+dev.off()
 
 
 
