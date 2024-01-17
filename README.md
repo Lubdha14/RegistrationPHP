@@ -112,14 +112,13 @@ https://www.kaggle.com/code/usmanabbas/pima-dibetes-analysis/notebook
 https://www.kaggle.com/code/anupaav/iris-species-classifier-neural-network
 
 Register
---
+-
 connection.php
 <?php
 $servername='localhost';
 $username='root';
 $password='';
 $dbname='database1';
-
 $conn = new mysqli($servername, $username, $password, $dbname);
 if($conn->connect_error){
 die("Connect Failed" . $conn->connect_error);
@@ -175,8 +174,7 @@ if(isset($_POST['submit'])){
        echo '<script>
         window.location.replace= "index.php";
        alert("Login failed.");
-         </script>';
-        
+         </script>';    
     }
 }
 
