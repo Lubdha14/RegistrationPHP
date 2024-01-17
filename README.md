@@ -111,6 +111,8 @@ https://www.kaggle.com/code/usmanabbas/pima-dibetes-analysis/notebook
 
 https://www.kaggle.com/code/anupaav/iris-species-classifier-neural-network
 
+https://tinyurl.com/kyp6vcv2
+
 Register
 -
 connection.php
