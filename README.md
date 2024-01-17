@@ -7,12 +7,12 @@ CREATE TABLE users (
     password VARCHAR(255) NOT NULL
 );
 select * from users
--------------------------------
+
 
 R Prograam
 
 ui.r
----
+
 shinyUI(
   pageWithSidebar(
     headerPanel("My First Shiny App"),
@@ -38,7 +38,7 @@ shinyUI(
 
 
 server.r  
--------
+
 shinyServer(function(input, output, session) {
   output$myPlot <- renderPlot({
     distType <- input$Distribution
@@ -55,18 +55,18 @@ shinyServer(function(input, output, session) {
 })
 
 Decision tree
------------
 
 
 
 
 
 
---------------------------
+
+
 Python
 https://www.kaggle.com/code/usmanabbas/pima-dibetes-analysis/notebook
 https://www.kaggle.com/code/anupaav/iris-species-classifier-neural-network
----------------------------
+
 
 
 
