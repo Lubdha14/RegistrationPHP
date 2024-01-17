@@ -40,10 +40,15 @@ shinyUI(
       
       
     ),
+   
     mainPanel(
+     
       plotOutput("myPlot")
+    
     )
+
   )
+
 )
 
 
@@ -51,18 +56,28 @@ shinyUI(
 server.r  
 
 shinyServer(function(input, output, session) {
+
   output$myPlot <- renderPlot({
+   
     distType <- input$Distribution
+
     size <- input$SampleSize
     
+    
     if (distType == 'Normal') {
+    
       randomVec <- rnorm(size, mean = as.numeric(input$Mean), sd = as.numeric(input$id))
+    
     } else {
+    
       randomVec <- rexp(size, rate = 1/as.numeric(input$lamba))
+    
     }
     
     hist(randomVec, col = "blue")
+  
   })
+
 })
 
 
