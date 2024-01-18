@@ -138,6 +138,8 @@ dev.off()
 
 Python
 ---
+https://www.kaggle.com/code/yossefazam/houses-price-prediction
+
 https://www.kaggle.com/code/usmanabbas/pima-dibetes-analysis/notebook
 
 https://www.kaggle.com/code/anupaav/iris-species-classifier-neural-network
