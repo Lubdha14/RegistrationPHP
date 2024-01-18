@@ -107,23 +107,23 @@ dev.off()
 
 Iris Dataset
 --
-# Load required libraries
+-# Load required libraries
 library(party)
 library(partykit)
 
-# Print the first few rows of the iris dataset
+-# Print the first few rows of the iris dataset
 print(head(iris))
 
-# Create a subset of the iris dataset (e.g., first 120 rows)
+-# Create a subset of the iris dataset (e.g., first 120 rows)
 input_data <- iris[1:120, ]
 
-# Build a conditional inference tree model
+-# Build a conditional inference tree model
 output_tree <- ctree(Species ~ Sepal.Length + Sepal.Width + Petal.Length + Petal.Width, data = input_data)
 
-# Plot the resulting tree
+-# Plot the resulting tree
 plot(output_tree)
 
-# Close the device where the plot is displayed
+-# Close the device where the plot is displayed
 dev.off()
 
 Python
